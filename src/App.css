@@ -1,0 +1,85 @@
+
+body {
+  overflow-x: hidden;
+}
+@keyframes blueSwipeRight {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+.text-animation {
+  display: inline-block; /* Ensures that the background is constrained to the text */
+  background: radial-gradient(circle, #c058ff 0, #ff5858 26%, #000 27%);
+  background-size: 200% 100%; /* Makes the gradient larger for the animation */
+  background-clip: text; /* Clips the background to the text */
+  -webkit-background-clip: text; 
+  color: transparent; /* Make the text transparent to show the gradient */
+  animation: blueSwipeRight 6s infinite ease-in-out; /* Animation for the gradient effect */
+}
+
+.box {
+  transition: transform 0.5s ease-in-out; 
+}
+
+.box-inview {
+  transform: translateY(-30px) ; /* Tilt up effect */
+}
+
+.transition-section {
+  transform-origin: center;
+}
+
+
+
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@keyframes swipeRightheroimg {
+  0% { transform: rotateY(0deg) translateX(0); }
+  50% { transform: rotateY(180deg) translateX(-80px); }
+  100% { transform: rotateY(180deg) translateX(0); }
+}
+
+@keyframes swipeLeftheroimg {
+  0% { transform: rotateY(0deg) translateX(0); }
+  50% { transform: rotateY(180deg) translateX(50px); }
+  100% { transform: rotateY(180deg) translateX(0); }
+}
+
+
+.fullscreen-black {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-color: black;
+  ; /* Bring to front to cover all other elements */
+  transition: all 0.7s ease-in;
+}
+
+.transition-section {
+  transition: all 0.7s ease-in-out;
+}

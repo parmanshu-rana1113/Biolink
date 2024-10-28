@@ -1,0 +1,92 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.subfooter {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+.curvy-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+svg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 25px;
+}
+
+/* @media (min-width: 768px) {
+    .curvy-line {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    svg{
+        width: 100%;
+    }
+  } */
+
+.app-buttons,
+.footer-links,
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-buttons img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #000;
+    font-size: 24px;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.firstfooter {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .quesmark {
+    cursor: pointer;
+    font-weight: 600;
+} */
+
+.forlast {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
